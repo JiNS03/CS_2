@@ -22,7 +22,6 @@
 |---|---|---|
 | 이미지 생성 | `gpt-image-2` | 고퀄리티 제품 및 배경 이미지 생성 |
 | 비디오/오디오 생성 | `sora-2` | 이미지에 생동감 있는 움직임 부여 |
-| 통합 편집 | `CapCut` | 컷 편집, 자막 삽입, 로고 합성 |
 
 ---
 
@@ -39,7 +38,6 @@
 | 사용 도구 및 목적 | `gpt-image-2`(기본 이미지) → `sora-2`(컵이 쌓이는 모션 부여) |
 | 입력 프롬프트 | *Cinematic timelapse of plastic cups piling up on a gray city sidewalk, gloomy atmosphere, hyper-realistic, 8k.* |
 | 출력 결과 요약 | 어두운 도심 배경에 플라스틱 컵이 순식간에 쌓이는 임팩트 있는 영상 |
-| 파일명 | `EW_S01_VID_v01_plastic.mp4` |
 
 **📝 프롬프트 수정 전/후 기록**
 
@@ -62,7 +60,6 @@
 | 사용 도구 및 목적 | `gpt-image-2`(제품 이미지) → `sora-2`(얼음 소리 및 애니메이션) |
 | 입력 프롬프트 | *A premium mint-colored tumbler standing at the center, bright natural sunlight, refreshing water drops on the surface, 4k.* |
 | 출력 결과 요약 | 싱그럽고 깨끗한 느낌의 텀블러 단독 샷 |
-| 파일명 | `EW_S02_VID_v01_tumbler.mp4` |
 
 ---
 
@@ -74,10 +71,9 @@
 | 목표 메시지 | 브랜드 로고 및 슬로건 전달 |
 | 화면 구성 | [그래픽] 깨끗한 파도 문양과 함께 로고 등장 |
 | 화면 카피 | "EcoWave : 작은 실천이 만드는 큰 파도" |
-| 사용 도구 및 목적 | `CapCut` (로고 애니메이션 및 텍스트 오버레이) |
+| 사용 도구 및 목적 | `sora-2`(로고 효과 애니메이션) |
 | 입력 프롬프트 | (디자인 도구 사용으로 프롬프트 생략) |
 | 출력 결과 요약 | 파도 소리와 함께 깔끔하게 마무리되는 엔딩 |
-| 파일명 | `EW_S03_VID_v01_logo.mp4` |
 
 ---
 
@@ -204,7 +200,7 @@ graph LR
 | **메시지** | 플라스틱 오염의 심각성 | 에코웨이브 텀블러 제안 | 브랜드 각인 및 행동 유도 |
 | **화면 구성** | 어두운 바닷속에 떠다니는 플라스틱 쓰레기 (시네마틱) | 밝은 햇살 아래 민트색 텀블러 클로즈업 | 화이트 배경에 파도 로고와 슬로건 애니메이션 |
 | **내레이션** | "매일 쌓이는 우리의 무관심." | "이제, 변화를 선택할 시간." | "에코웨이브, 작은 실천이 만드는 큰 파도." |
-| **사용 도구** | `gpt-image-2`, `sora-2` | `gpt-image-2`, `sora-2` | `CapCut` |
+| **사용 도구** | `gpt-image-2`, `sora-2` | `gpt-image-2`, `sora-2` |
 | **프롬프트** | *Cinematic close-up of plastic waste floating in dark blue ocean water, 4k, realistic.* | *Minimalist mint-colored reusable tumbler, bright natural lighting, 4k, `--sref [S01 URL]`* | *Eco-friendly brand logo animation, wave icon, white background, clean text.* |
 
 **최종 통합 파일명**: `EW_Final_Video_10s_v01.mp4`
